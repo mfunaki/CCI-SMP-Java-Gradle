@@ -41,4 +41,6 @@ jobs:
           key: v1-dependencies-{{ checksum "demo/app/build.gradle" }}
 
       # run tests!
-      - run: gradle test
+      - run: 
+          command: gradle test
+          working_directory: demo
